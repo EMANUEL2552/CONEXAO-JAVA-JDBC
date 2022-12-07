@@ -5,13 +5,13 @@ public class CriarBanco {
         
     final String url = "jdbc:mysql:";
     final String usuario = "root";
-    final String senha = "1234567";
+    final String senha = "12";
     
     Connection conexao = DriverManager
             .getConnection(url, usuario, senha);
     
         Statement stmt = conexao.createStatement();
-        stmt.execute("CREATE DATABASE curso_java");
+        stmt.execute("CREATE DATABASE c-java");
         
         System.out.println("banco criado");
     
